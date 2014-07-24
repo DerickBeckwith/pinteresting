@@ -17,4 +17,4 @@
 .env
 
 # Ignore the public folder.
-/public
+/public/system/*
