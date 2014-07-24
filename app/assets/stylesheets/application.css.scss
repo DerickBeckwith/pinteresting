@@ -19,6 +19,18 @@ $jumbotron-bg:                    #3498db;
   font-weight: bold;
 }
 
+#pins {
+  margin: 0 auto;
+}
+
+.box {
+  margin: 5px;
+  width: 214px;
+}
+.box img {
+  width: 100%;
+}
+
 /*
 *= require 'masonry/transistions'
 */
