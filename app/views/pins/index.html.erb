@@ -11,7 +11,7 @@
       <div class="panel-body">
         <p><%= pin.description %></p>
         <p><strong><%= pin.user.name if pin.user %></strong></p>
-        <% if pin.user == current_user %>
+        <% if current_user && pin.user == current_user %>
           <div class="actions">
             <%= link_to edit_pin_path(pin) do %>
               <span class="glyphicon glyphicon-edit"></span>
@@ -20,7 +20,7 @@
             <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?'
               } do %>
               <span class="glyphicon glyphicon-trash"></span>
-              Destroy
+              Delete
             <% end %>
           </div>
         <% end %>
